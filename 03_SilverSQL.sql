@@ -12,7 +12,7 @@ SELECT * FROM ${username}.Airlines_Bronze
 
 -- COMMAND ----------
 
-CREATE TABLE ${username}.Airlines_Silver
+CREATE OR REPLACE TABLE ${username}.Airlines_Silver
 AS
 SELECT 
 *,
@@ -23,7 +23,3 @@ ${username}.Airlines_Bronze
 -- COMMAND ----------
 
 SELECT ArrDelay, DepDelay, WasLate FROM ${username}.Airlines_Silver
-
--- COMMAND ----------
-
-

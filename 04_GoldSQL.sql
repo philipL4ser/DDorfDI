@@ -12,9 +12,5 @@ SELECT * from ${username}.Airlines_Silver
 
 -- COMMAND ----------
 
-CREATE TABLE ${username}.Airlines_Gold AS
+CREATE OR REPLACE TABLE ${username}.Airlines_Gold AS
 SELECT UniqueCarrier, round(count_if(WasLate) / count(*) * 100) as LatePercentage from ${username}.Airlines_Silver Group By UniqueCarrier
-
--- COMMAND ----------
-
-

@@ -16,7 +16,3 @@
 -- COMMAND ----------
 
 SELECT * FROM ${username}.Airlines_gold
-
--- COMMAND ----------
-
-

@@ -8,7 +8,7 @@
 
 -- COMMAND ----------
 
-CREATE TABLE ${username}.Airlines_Bronze AS
+CREATE OR REPLACE TABLE ${username}.Airlines_Bronze AS
 SELECT * FROM ${username}.airlines_pt0_csv
 
 -- COMMAND ----------
@@ -25,7 +25,7 @@ describe detail ${username}.Airlines_Bronze
 
 -- COMMAND ----------
 
--- MAGIC %fs ls /user/hive/warehouse/odl_instructor_638452.db/airlines_bronze
+-- MAGIC %fs ls /user/hive/warehouse/odl_instructor_637201.db/airlines_bronze
 
 -- COMMAND ----------
 
